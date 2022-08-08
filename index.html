@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Frigate">
     <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://kit.fontawesome.com/86708b0f43.js" crossorigin="anonymous"></script>
     <title>Lesson-12 Zemoora(Forms)</title>
 </head>
 <body>
@@ -24,9 +25,46 @@
     </form>
     
     <!-- Sign up form begins here-->
-    <!-- <form class="signup">
-        
-    </form> -->
+    <form class="signup">
+        <label for="fullname">Fullname</label>
+        <div class="input-icon">
+            <input type="text" name="fullname" id="fullname" />
+          <span class="icon">
+                <i class="fa-solid fa-user"></i>
+          </span>
+        </div>
+            <fieldset>
+                <legend>Gender</legend>
+                <div>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" />  
+                </div>
+                <div>
+                   <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" />
+             </div>
+             <div>
+                <label for="not-specified">I do not wish to specify</label>
+                <input type="radio" name="gender" id="not-specified" />
+             </div> 
+            </fieldset>
+        <div class="nationality">
+            <label for="nationality">Nationality</label>
+            <select name="nationality" id="nationality">
+                <option value="ng">Nigeria</option>
+                <option value="gh">Ghana</option>
+                <option value="usa">United States of America</option>
+            </select>
+        </div>
+        <div>
+            <!-- <label for="bio">Bio</label> -->
+            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Tell us about yourself..."></textarea>
+        </div>
+        <div>
+            <label for="profile-image">Profile Image</label>
+            <input type="file" name="profile-image" id="profile-image">
+        </div>
+    </form>
 
 </body>
 </html>

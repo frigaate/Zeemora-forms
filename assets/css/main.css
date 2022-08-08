@@ -1,3 +1,8 @@
+:root{
+    --dark-colour: rgba(0, 0, 0, 0.8);
+    --shadow-colour: rgba(0, 0, 0, 0.5);
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -11,7 +16,7 @@ h1{
 .signin{
     max-width: 700px;
     /* border: 1px solid black; */
-    box-shadow: 5px 4px 10px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 4px 10px 1px var(--shadow-colour);
     border-radius: 10px;
     padding: 20px;
 }
@@ -34,13 +39,107 @@ h1{
     display: block;
     width: 100%;
     padding: 9px 0;
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    border: 1px solid var(--dark-colour);
     border-radius: 10px;
     cursor: pointer;
     margin-top: 20px;
 }
 
 .signin button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--dark-colour);
     color: whitesmoke;
+}
+
+.signup{
+    margin-top: 20px;
+    max-width: 700px;
+    box-shadow: 5px 4px 10px 1px var(--shadow-colour);
+    border-radius: 10px;
+    padding: 20px;
+    color: #555;
+}
+
+.signup div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    gap: 5px;
+}
+
+.signup .input-icon{
+    flex-direction: row-reverse;
+    padding: 6px 20px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+
+.input-icon input{
+    border: none;
+    outline: none;
+    flex: 1;
+    margin-left: 10px;
+    background-color: transparent;
+}
+
+.icon{
+    margin-top: 5px;
+    color: #555;
+}
+
+.input-icon input:focus + .icon {
+    color: #111;
+}
+
+.signup input{
+    padding: 6px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f1f1f1;
+}
+
+.signup fieldset {
+    border: none;
+}
+
+.signup fieldset div{
+   display: flex;
+   flex-direction: row;
+}
+
+.signup select[name="nationality"] {
+    width: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.signup select[name="nationality"]:hover {
+    background-color: var(--dark-colour);
+    color: white;
+    border: 1px solid whitesmoke;
+    display: inline-block;
+}
+
+.signup input[type=file] {
+    display: none;
+}
+
+.signup label[for="profile-image"] {
+    display: block;
+    padding: 8px 0;
+    width: 100%;
+    background-color: var(--dark-colour);
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.signup label[for="profile-image"]:hover{
+    background-color: whitesmoke;
+    color: var(--dark-colour);
+    border: 1px solid var(--dark-colour);
+}
+
+.signup select["textarea"]{
+    max-width: 190px
 }
