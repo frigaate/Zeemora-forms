@@ -99,6 +99,23 @@ h1{
 
 .signup fieldset {
     border: none;
+    padding: 6px 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    position: relative;
+}
+
+legend{
+    /* border: none; */
+    position: absolute;
+    margin-top: 0px;
+    margin-left: -3px;
+    /* margin-bottom: 40px; */
+    /* display: none; */
+}
+
+.signup [label="male"]{
+    margin-top: 40px;
 }
 
 .signup fieldset div{
@@ -106,13 +123,16 @@ h1{
    flex-direction: row;
 }
 
-.signup select[name="nationality"] {
-    width: 50%;
+.signup select{
+    /* width: 50%; */
     border: none;
+    background-color: #f1f1f1;
+    padding: 6px 10px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
-.signup select[name="nationality"]:hover {
+.signup select:hover {
     background-color: var(--dark-colour);
     color: white;
     border: 1px solid whitesmoke;
@@ -141,5 +161,5 @@ h1{
 }
 
 .signup select["textarea"]{
-    max-width: 190px
+    width: 200px
 }
